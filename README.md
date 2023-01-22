@@ -16,6 +16,15 @@ Output stage: processed data is sent to a receiver and are output. Output plugin
 Logstash’s processed data is saved in a high-performance, searchable storage engine, and easily viewable from a user interface tier.
 
 
+# Query ElasticSearch use Kibana
+
+![image](https://user-images.githubusercontent.com/36766101/213897404-18d55768-3537-4228-9160-59727498b901.png)
+![image](https://user-images.githubusercontent.com/36766101/213897425-99bea8da-2d14-4fd7-8b53-ec55044062d9.png)
+![image](https://user-images.githubusercontent.com/36766101/213897456-01664655-6983-468e-be97-58cc90020c33.png)
+![image](https://user-images.githubusercontent.com/36766101/213897508-b811754d-3d87-449a-913c-929f0ef92db8.png)
+![image](https://user-images.githubusercontent.com/36766101/213897517-1f6d3b25-9e12-4bb0-b1f4-e23f46698ee1.png)
+
+
 
 # Send Data to Elasticsearch with Security
 ![image](https://user-images.githubusercontent.com/36766101/213895991-bdef7a88-e1a7-448e-a42a-c2fc2e880fd1.png)
@@ -24,7 +33,9 @@ Copy certificate and give enough permission
 
 ![image](https://user-images.githubusercontent.com/36766101/213896008-e91f068b-77d5-4acc-ba84-4f240411a980.png)
 
-Provisioning ES Domain
+
+
+# Provisioning ES Domain
 Now we gonna provision an ES Domain with Fine-Grained Access Control enabled. It provides 02 types of authorization and authentication methods.
 
 Method 01 — A built-in user database, which makes it easy to configure usernames and passwords inside of Elasticsearch.
