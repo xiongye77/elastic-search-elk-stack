@@ -18,23 +18,10 @@ Logstash’s processed data is saved in a high-performance, searchable storage e
 
 
 # Send Data to Elasticsearch with Security
-input { stdin { } }
-filter {
-  grok {
-    match => { "message" => "%{COMBINEDAPACHELOG}" }
-  }
-  date {
-    match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
-  }
-}
-output {
-  elasticsearch {
-        hosts => ["https://192.168.116.145:9200"]
-        user => "elastic"
-        password => "i04mQkERCsdffdf_uh8y"
-        index => "my-index-%{+YYYY.MM.dd}"
-        ssl => true
-        cacert => "/usr/share/logstash/http_ca.crt"
-  }
-  stdout { codec => rubydebug }
-}
+![image](https://user-images.githubusercontent.com/36766101/213895991-bdef7a88-e1a7-448e-a42a-c2fc2e880fd1.png)
+
+Copy certificate and give enough permission
+
+![image](https://user-images.githubusercontent.com/36766101/213896008-e91f068b-77d5-4acc-ba84-4f240411a980.png)
+
+elastic1@elastic1:/usr/share/logstash$ bin/logstash -f logstash-filter.conf
