@@ -23,6 +23,7 @@ Logstash’s processed data is saved in a high-performance, searchable storage e
 ![image](https://user-images.githubusercontent.com/36766101/213897456-01664655-6983-468e-be97-58cc90020c33.png)
 ![image](https://user-images.githubusercontent.com/36766101/213897508-b811754d-3d87-449a-913c-929f0ef92db8.png)
 ![image](https://user-images.githubusercontent.com/36766101/213897517-1f6d3b25-9e12-4bb0-b1f4-e23f46698ee1.png)
+![image](https://user-images.githubusercontent.com/36766101/213898169-6012d2f6-c9fd-4b30-8a8f-e655cc23c0ca.png)
 
 
 
