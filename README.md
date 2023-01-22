@@ -24,4 +24,4 @@ Copy certificate and give enough permission
 
 ![image](https://user-images.githubusercontent.com/36766101/213896008-e91f068b-77d5-4acc-ba84-4f240411a980.png)
 
-elastic1@elastic1:/usr/share/logstash$ bin/logstash -f logstash-filter.conf
+# elastic1@elastic1:/usr/share/logstash$ bin/logstash -f logstash-filter.conf
