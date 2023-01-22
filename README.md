@@ -14,3 +14,27 @@ Filter stage: Once data is ingested, one or more filter plugins take care of the
 Output stage: processed data is sent to a receiver and are output. Output plugins are available for many different endpoints, including those for Elasticsearch, HTTP, e-mail, S3 file, PagerDuty alert, or Syslog to name just a few.
 
 Logstash’s processed data is saved in a high-performance, searchable storage engine, and easily viewable from a user interface tier.
+
+
+
+# Send Data to Elasticsearch with Security
+input { stdin { } }
+filter {
+  grok {
+    match => { "message" => "%{COMBINEDAPACHELOG}" }
+  }
+  date {
+    match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+  }
+}
+output {
+  elasticsearch {
+        hosts => ["https://192.168.116.145:9200"]
+        user => "elastic"
+        password => "i04mQkERCsdffdf_uh8y"
+        index => "my-index-%{+YYYY.MM.dd}"
+        ssl => true
+        cacert => "/usr/share/logstash/http_ca.crt"
+  }
+  stdout { codec => rubydebug }
+}
